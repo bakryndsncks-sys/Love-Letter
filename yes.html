@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yay! You said YES 💍</title>
+  <style>
+    body {
+      margin:0; min-height:100vh;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:flex-start;
+      background: linear-gradient(135deg,#ffd6e8,#fff0f6);
+      font-family:'Poppins',sans-serif;
+      color:#3a2b3b; text-align:center; padding:20px;
+      overflow-x:hidden;
+    }
+
+    .box {
+      max-width:700px;
+      background:white;
+      border-radius:18px;
+      padding:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.12);
+      margin-top:50px;
+      z-index:3;
+    }
+
+    h1 {
+      color:#ff4d88;
+      margin-bottom:8px;
+      font-size:2rem;
+    }
+
+    p { font-size:1.05rem; color:#555; line-height:1.6; }
+
+    .floating { position:fixed; inset:0; pointer-events:none; z-index:1; }
+
+    @keyframes rise {
+      from { transform: translateY(30vh) scale(.9); opacity:1; }
+      to { transform: translateY(-30vh) scale(1.1); opacity:0; }
+    }
+
+    /* Jokes section */
+    .jokes-container {
+      margin-top:40px;
+      background: rgba(255, 240, 245, 0.7);
+      border-radius:25px;
+      padding:25px;
+      box-shadow:0 0 10px rgba(255, 182, 193, 0.6);
+      font-family:"Poppins", sans-serif;
+      max-width:700px;
+      z-index:3;
+    }
+
+    .jokes-container h2 {
+      text-align:center;
+      color:#ff4d88;
+      margin-bottom:20px;
+    }
+
+    .joke, .shayari-box {
+      opacity:0;
+      transform:translateY(20px);
+      background:white;
+      padding:15px;
+      margin:10px 0;
+      border-radius:15px;
+      font-size:1.05rem;
+      line-height:1.6;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      transition:all 0.6s ease;
+    }
+
+    .show {
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .shayari-frame {
+      margin-top:40px;
+      background: rgba(255, 245, 250, 0.9);
+      border: 2px dashed #ff7aa8;
+      border-radius:20px;
+      padding:25px;
+      box-shadow: 0 0 20px rgba(255, 170, 190, 0.4);
+      max-width:700px;
+      z-index:3;
+    }
+
+    .shayari-frame h2 {
+      color:#ff4d88;
+      font-size:1.5rem;
+      margin-bottom:15px;
+    }
+
+    .shayari-frame p {
+      font-size:1.1rem;
+      color:#444;
+      line-height:1.8;
+    }
+
+    .shayari-frame span {
+      color:#ff4d88;
+      font-weight:600;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>💍 She said YES! 💖</h1>
+    <p>Ab toh officially tu meri <b>future wifey</b> hai 😚</p>
+    <p>Tu meri smile ka reason bhi hai aur mera peace of mind bhi ❤️</p>
+    <p style="margin-top:14px; font-weight:700;">— Yours, Priyanshu 💫</p>
+  </div>
+
+  <div class="jokes-container">
+    <h2>Okay, now that you said YES... 😂💘</h2>
+
+    <div class="joke">💬 Me: "Tum meri favorite notification ho!"<br>
+      Her: "Kyun?"<br>
+      Me: "Kyuki tumhara naam aate hi smile auto on ho jaati hai 😚📱"
+    </div>
+
+    <div class="joke">💞 Me: "Tu alarm clock jaise hai."<br>
+      Her: "Phir toh annoying hogi?"<br>
+      Me: "Nahi baby, kyunki tu hi hai jo mujhe har din uthne ki wajah deti hai ☀️💕"
+    </div>
+
+    <div class="joke">🌹 Me: "Tu meri zindagi ka chand hai."<br>
+      Her: "Aur tu?"<br>
+      Me: "Main wo pagal jo har raat tujhe dekhta rehta hai 🌙💫"
+    </div>
+
+    <div class="joke">😅 She: "Main gussa hoon!"<br>
+      Me: "Perfect! Tumhara gussa aur mera manana — best combo ever 😍"
+    </div>
+
+    <div class="joke">🥰 Me: "Tumhe dekhkar lagta hai Google ka algorithm bhi jealous hoga."<br>
+      Her: "Kyun?"<br>
+      Me: "Kyuki maine jo chaha sab tum me mil gaya 😌💫"
+    </div>
+
+    <div class="joke">🤣 Me: "Tum meri jeans jaise ho."<br>
+      Her: "Huh?"<br>
+      Me: "Perfect fit! Aur bina tumhare comfort hi nahi milta 😌👖"
+    </div>
+
+    <div class="joke">💝 Me: "Main na tumhe ek naam dena chahta hoon."<br>
+      Her: "Kya?"<br>
+      Me: "Mera password... kyunki tumhe yaad karna har din zaroori hai 😜🔐"
+    </div>
+
+    <div class="joke">😂 Her: "Tum romantic zyada ho ya funny?"<br>
+      Me: "Depends... agar tu samne ho toh dono ka full combo ho jaata hai 💘😎"
+    </div>
+
+    <div class="joke">😂 Me: "Main tumhe chocolate bolu?"<br>
+      Her: "Kyun?"<br>
+      Me: "Kyuki har din tumhe dekh ke mood sweet ho jaata hai 🍫💞"
+    </div>
+
+    <p style="text-align:center; color:#ff4d88; font-weight:600; margin-top:20px;">
+      — Okay okay ab hass lo baby, warna phir se 'No 😅' dabaa dogi 😂💞
+    </p>
+  </div>
+
+  <div class="shayari-frame shayari-box">
+    <h2>🌙 Shayari for My Chand 💖</h2>
+    <p>
+      Chand si tu, par tere bina raat adhuri lagti hai,<br>
+      Teri muskurahat dekh ke meri duniya puri lagti hai 💖<br>
+      Har dua me bas tera hi naam mangta hoon main,<br>
+      Kyunki meri zindagi ki sabse khoobsurat wajah — <span>Tu hi hai</span> 💫
+    </p>
+  </div>
+
+  <div class="floating" id="floatingYes"></div>
+
+  <script>
+    // Floating emojis background
+    (function(){
+      const container = document.getElementById('floatingYes');
+      function spawn(){
+        const el = document.createElement('div');
+        el.textContent = ['💖','💞','✨','🌸','💕'][Math.floor(Math.random()*5)];
+        el.style.position='fixed';
+        el.style.left=Math.random()*100+'vw';
+        el.style.top=(60+Math.random()*30)+'vh';
+        el.style.fontSize=(18+Math.random()*26)+'px';
+        el.style.opacity=.95;
+        el.style.animation='rise '+(3+Math.random()*3)+'s cubic-bezier(.2,.8,.2,1)';
+        container.appendChild(el);
+        setTimeout(()=>el.remove(),6000);
+      }
+      setInterval(spawn,400);
+    })();
+
+    // Show jokes and Shayari one by one
+    const jokes = document.querySelectorAll('.joke');
+    const shayari = document.querySelector('.shayari-box');
+    jokes.forEach((joke, index) => {
+      setTimeout(() => { joke.classList.add('show'); }, 400 * index);
+    });
+    // Show shayari last
+    setTimeout(() => { shayari.classList.add('show'); }, 400 * (jokes.length + 2));
+  </script>
+</body>
+</html>
